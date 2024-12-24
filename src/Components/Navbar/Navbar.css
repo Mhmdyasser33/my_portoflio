@@ -1,0 +1,132 @@
+.container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.container > div > a {
+    text-decoration: none;
+}
+
+.container > div > a > h1{
+    color: #c770f0;
+    font-size: 28px;
+    margin: 15px 0 0 20px;
+}
+
+.container .navbar-container {
+    display: flex;
+    margin: 15px 0 0 auto;
+    flex-wrap: wrap;
+}
+
+.navbar-container a{
+    position: relative;
+    text-decoration: none;
+    margin: 5px 15px;
+}
+
+.navbar-container a::after{
+   position: absolute;
+   content: '';
+   width: 0 ;
+   height: 4px;
+   bottom: -2px;
+   left: 0 ;
+   background: #c770f0;
+   transition: all 0.3s ease-in;
+   -webkit-transition: all 0.3s ease-in;
+   -moz-transition: all 0.3s ease-in;
+   -ms-transition: all 0.3s ease-in;
+   -o-transition: all 0.3s ease-in;
+}
+
+.navbar-container a:hover::after{
+    width: 100%;
+}
+
+.navbar-container a  span {
+    margin-right: 3px;
+    color : #fff;
+}
+
+.navbar-container a .icon{
+    color : #fff ;
+    margin-right: 5px;
+}
+
+.home-page-details-container{
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
+    width: 100%;
+}
+
+.left-side .home-details {
+    margin-top: 100px;
+    margin-left: 0;
+    padding: 0 20px;
+}
+
+.right-side {
+    margin-top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+section h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+.introduce-mySelf p {
+    font-size: 1.2rem;
+    color: #ffff;
+    padding: 0 20px;
+}
+
+.details {
+    text-align: center;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .container > div > a > h1 {
+        text-align: center;
+        margin: 15px 0;
+    }
+    
+    .container .navbar-container {
+        margin: 0;
+        justify-content: center;
+        padding: 10px 0;
+    }
+    
+    section h1 {
+        font-size: 2rem;
+    }
+    
+    .introduce-mySelf p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar-container a {
+        margin: 5px 10px;
+    }
+    
+    section h1 {
+        font-size: 1.8rem;
+    }
+}

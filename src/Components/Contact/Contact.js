@@ -39,6 +39,11 @@ const Contact = () => {
     }
   }
 
+  const handlePhoneLogic = (phone)=>{
+    const value = phone.replace(/[^0-9]/g, ''); 
+    setPhone(value);
+  }
+
   return (
     <div className='contact' data-aos="fade-down"
          data-aos-easing="linear"
@@ -59,7 +64,7 @@ const Contact = () => {
         </div>
         <div>
           <label htmlFor='phoneNumber'>PhoneNumber</label>
-          <input type='text'  placeholder='Enter your phone' id='phoneNumber' value={phone} name='phoneNumber' required ref={phoneRef} onChange={(e) => setPhone(e.target.value)} />
+          <input type='text'  placeholder='Enter your phone' id='phoneNumber' value={phone} name='phoneNumber' required ref={phoneRef} onChange={(e) => {handlePhoneLogic(e.target.value)}} />
         </div>
         <div>
           <label htmlFor='email'>Email</label>

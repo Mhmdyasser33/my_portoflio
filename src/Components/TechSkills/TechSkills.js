@@ -15,72 +15,31 @@ import {
 } from 'react-icons/di';
 import './TechSkills.css';
 
+const skills = [
+  { icon: <DiHtml5 size={72} />, name: 'HTML5' },
+  { icon: <DiCss3 size={72} />, name: 'CSS3' },
+  { icon: <DiJavascript size={72} />, name: 'JavaScript' },
+  { icon: <DiBootstrap size={72} />, name: 'Bootstrap' },
+  { icon: <DiSass size={72} />, name: 'Sass' },
+  { icon: <DiReact size={72} />, name: 'React' },
+  { icon: <CgCPlusPlus size={72} />, name: 'C++' },
+  { icon: <DiPython size={72} />, name: 'Python' },
+  { icon: <DiGit size={72} />, name: 'Git' },
+  { icon: <DiDatabase size={72} />, name: 'Database' },
+  { icon: <DiFirebase size={72} />, name: 'Firebase' },
+  { icon: <DiGithub size={72} />, name: 'GitHub' },
+];
+
 const TechSkills = () => {
   return (
     <div className='tech-skill-container' data-aos="fade-down"
       data-aos-easing="linear"
       data-aos-duration="1500">
-
-      {/* HTML5 */}
-      <div>
-        <DiHtml5 size={72} className='tech-skill'/>
-      </div>
-
-      {/* CSS3 */}
-      <div>
-        <DiCss3 size={72} className='tech-skill'/>
-      </div>
-
-      {/* JavaScript */}
-      <div>
-        <DiJavascript size={72} className='tech-skill'/>
-      </div>
-
-      {/* Bootstrap */}
-      <div>
-        <DiBootstrap size={72} className='tech-skill'/>
-      </div>
-
-      {/* Sass */}
-      <div>
-        <DiSass size={72} className='tech-skill'/>
-      </div>
-
-      {/* React */}
-      <div>
-        <DiReact size={72} className='tech-skill'/>
-      </div>
-
-      {/* C++ */}
-      <div>
-        <CgCPlusPlus size={72} className='tech-skill'/>
-      </div>
-
-      {/* Python */}
-      <div>
-        <DiPython size={72} className='tech-skill'/>
-      </div>
-
-      {/* Git */}
-      <div>
-        <DiGit size={72} className='tech-skill'/>
-      </div>
-
-      {/* Database */}
-      <div>
-        <DiDatabase size={72} className='tech-skill'/>
-      </div>
-
-      {/* Firebase */}
-      <div>
-        <DiFirebase size={72} className='tech-skill'/>
-      </div>
-
-      {/* GitHub */}
-      <div>
-        <DiGithub size={72} className='tech-skill'/>
-      </div>
-
+      {skills.map((skill, index) => (
+        <div key={index} className='tech-skill-container'>
+          {skill.icon}
+        </div>
+      ))}
     </div>
   )
 }

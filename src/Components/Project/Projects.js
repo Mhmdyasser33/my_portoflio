@@ -2,13 +2,13 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import amazonClone from '../../images/Screenshot (138).png'
 import linkedInClone from '../../images/Screenshot (142).png'
-import movieApp from '../../images/Screenshot (144).png'
 import crudOperation from '../../images/Screenshot (146).png'
 import weatherApp from '../../images/Screenshot (149).png'
 import dashBoard from '../../images/Screenshot (140).png'
 import X_O_Game from '../../images/Screenshot (152).png'
 import to_do_list from '../../images/Screenshot (151).png'
 import GithubImg from '../../images/icons8-github.svg' ;
+import LmsProject from '../../images/Macbook-Air-lms-project-three-iota.vercel.app.png'
 import './Projects.css'
 
 const Projects = () => {
@@ -53,13 +53,12 @@ const Projects = () => {
      <div className='project' data-aos="flip-left"
      data-aos-easing="ease-out-cubic"
      data-aos-duration="2000">
-     <img src={movieApp} alt='movie-app' />
-     <h4>Movie-app</h4>
+     <img src={LmsProject} alt='movie-app' />
+     <h4> Lms-project</h4>
     <p>
-    The Movie App project is a web application built using React.js that allows users to browse and explore information about movies fetched from an external API.
-     Users can search for movies, view movie details, and discover popular and trending films.
+    This project is a comprehensive Learning Management System (LMS) and course platform built with modern web technologies. It replicates key features of popular online learning platforms like Udemy, enabling users to create, sell, and take online courses.
     </p>
-    <Link to="https://github.com/Mhmdyasser33/Movies-app">
+    <Link to="https://github.com/Mhmdyasser33/LMS-project">
     <img src={GithubImg} alt='github-img' />
     <span>Github</span>
     </Link>
@@ -69,13 +68,11 @@ const Projects = () => {
      data-aos-easing="ease-out-cubic"
      data-aos-duration="2000">
      <img src={crudOperation} alt='crud-operation' />
-     <h4>crud-operation</h4>
+     <h4> Madrasty </h4>
     <p>
-    The CRUD Operation App project is a web application built using React.js
-     that performs basic Create, Read, Update, and Delete operations on a data
-     collection. It allows users to interact with the data by adding, viewing, updating, and removing records.
+    Madrasty is a comprehensive software solution designed to streamline and automate various administrative and operational processes within a school. The system aims to improve efficiency and provide better tracking and reporting capabilities for the school’s management, teachers, students, and parents
     </p>
-    <Link to="https://github.com/Mhmdyasser33/Crud_operation">
+    <Link to="https://github.com/Hadymohammed/About-Madrasty">
     <img src={GithubImg} alt='github-img' />
     <span>Github</span>
     </Link>

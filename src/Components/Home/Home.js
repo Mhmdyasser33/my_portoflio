@@ -48,7 +48,7 @@ const Home = () => {
           <p className='section-details' style={{fontSize: "16.2px"}}>
             I am fluent in classics like <span style={{color: "#c770f0", fontSize: "16.2px"}}>C++ and JavaScript</span>
           </p>
-          <p className='section-details' style={{fontSize: "16.2px"}}>My field of interest is building new Web Technologies and Products, and I'm also interested in areas related to Blockchain</p>
+          <p className='section-details' style={{fontSize: "16.2px"}}>My field of interest is building new Web Technologies and Products, and I'm also interested in areas related to fullstack field , front end specially </p>
           <p className='section-details' style={{fontSize: "16.2px"}}>
             Whenever possible, I also apply my passion for developing products with<span style={{color: "#c770f0", fontSize: "19.2px"}}> Node.js </span> and<span style={{color: "#c770f0"}}> Modern Javascript Library and Frameworks  like React.js and Next.js</span>
           </p>

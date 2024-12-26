@@ -8,10 +8,7 @@ const CV = () => {
   const handleDownload = () => {
     setDownloadStatus('loading');
     
-    // Define the relative path to the CV document
-    const cv_path = '../../MY_CV/my cv.docx';
-
-    // Fetch the CV document using the defined path
+    const cv_path = '../../MY_CV/Mhmd_yasser_cv.pdf';
     fetch(cv_path)
       .then((response) => {
         if (!response.ok) {
@@ -20,20 +17,14 @@ const CV = () => {
         return response.blob();
       })
       .then((blob) => {
-        // Create a temporary URL for the Blob
+  
         const temp_url = URL.createObjectURL(blob);
-
-        // Create an <a> element to initiate download
         const a = document.createElement("a");
         a.href = temp_url;
-        a.download = "my cv.docx";
+        a.download = "my cv.pdf";
         a.target = "_blank";
         a.click();
-
-        // Revoke the temporary URL to free up memory
         URL.revokeObjectURL(temp_url);
-        
-        // Show success state briefly
         setDownloadStatus('success');
         setTimeout(() => setDownloadStatus('idle'), 2000);
       })

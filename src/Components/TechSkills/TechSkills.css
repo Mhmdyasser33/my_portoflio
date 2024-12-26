@@ -38,3 +38,31 @@ flex-wrap: wrap;
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
 }
+
+
+.tech-skill-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Position the tooltip above the icon */
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: all ease-in-out 0.4s;
+  }
+  
+  .tech-skill-container:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+  }

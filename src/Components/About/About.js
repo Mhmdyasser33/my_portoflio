@@ -16,10 +16,11 @@ const About = () => {
               Know Who <span style={{ color: "#c770f0" }}> I'M </span>
             </h2>
             <h4 style={{ color: "#ffffff", fontSize: "17px", fontStyle: "oblique", padding: "20px" }}>
-              Hi Everyone, I am <span style={{ color: "#c770f0" }}>Mohammed Yasser </span>,
-              20 years old from<span style={{ color: "#c770f0" }}>  Qena, Egypt. </span>
-              I am a final year student in faculty and I am in computer science department.
-            </h4>
+  Hi Everyone, I am <span style={{ color: "#c770f0" }}>Mohammed Yasser</span>, 
+  a 22-year-old graduate from<span style={{ color: "#c770f0" }}> Qena, Egypt. <br></br></span> 
+  I graduated in 2024 from the Faculty of Computers and Information.
+</h4>
+
             <h5 style={{ color: "#9b7eac", fontSize: "16px" }}>
               "Strive to build things that make a difference!"
               <br />

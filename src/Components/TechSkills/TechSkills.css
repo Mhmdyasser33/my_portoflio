@@ -1,68 +1,61 @@
-.tech-skill-container{
- display: flex ;
- justify-content: center ;
-color : #ffffff;
-flex-wrap: wrap;
- box-shadow:(89, 4, 168, 0.137) 4px 5px 4px 3px ;
- text-align : center;
- margin-bottom: 20px;
-
+/* Main container for skill cards */
+.tech-skill-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
 }
 
+/* Individual skill card styles */
 .tech-skill-container div {
-    width : calc(100% / 4) ;
-    margin-right: 30px;
-    border:  1.7px solid rgba(200, 137, 230, 0.637) !important;
-    padding: 20px ;
-    text-align: center ;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    margin-top: 20px;
-    box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
-    transition: all 0.4s ease;
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -ms-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
+  flex: 1 1 calc(33.33% - 30px); /* Default: 3 items per row */
+  margin: 20px 15px; 
+  border: 1.7px solid rgba(200, 137, 230, 0.637);
+  padding: 15px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 4px 5px 4px rgba(89, 4, 168, 0.137);
+  transition: transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
 }
 
 .tech-skill-container div:hover {
-    transform: scale(1.1);
-   border: .5px solid ;
-    cursor: pointer;
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
+  transform: scale(1.1);
+  border-color: #ffffff; /* Highlight border on hover */
+  box-shadow: 6px 8px 6px rgba(89, 4, 168, 0.2);
+  cursor: pointer;
 }
 
+.tooltip {
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
 
-.tech-skill-container {
-    position: relative;
-    display: inline-block;
+.tech-skill-container div:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .tech-skill-container div {
+    flex: 1 1 calc(50% - 30px); 
   }
-  
-  .tooltip {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%; /* Position the tooltip above the icon */
-    left: 50%;
-    margin-left: -60px;
-    opacity: 0;
-    transition: all ease-in-out 0.4s;
+}
+
+@media (max-width: 480px) {
+  .tech-skill-container div {
+    flex: 1 1 calc(100% - 30px);
   }
-  
-  .tech-skill-container:hover .tooltip {
-    visibility: visible;
-    opacity: 1;
-  }
+}

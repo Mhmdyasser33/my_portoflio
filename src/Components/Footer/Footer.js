@@ -11,7 +11,7 @@ const Footer = () => {
     <div className='footer'>
       {/* Copyright section */}
       <div className='copyright'>
-        <p>All Copyrights are reserved © 2023 Mohamed Yasser &#128525;</p>
+        <p> All Copyrights are reserved © 2024 Mohamed Yasser &#128525;</p>
       </div>
 
       {/* Contact links section */}

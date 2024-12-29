@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import amazonClone from '../../images/Screenshot (138).png'
 import linkedInClone from '../../images/Screenshot (142).png'
-import crudOperation from '../../images/Screenshot (146).png'
+import Madrasty from "../../images/Users Directory 1.png"
 import weatherApp from '../../images/Screenshot (149).png'
 import dashBoard from '../../images/Screenshot (140).png'
 import X_O_Game from '../../images/Screenshot (152).png'
@@ -63,11 +63,11 @@ const Projects = () => {
     <span>Github</span>
     </Link>
      </div>
-     {/* Crud operation */}
+     {/* Madrasty app  */}
      <div className='project' data-aos="flip-left"
      data-aos-easing="ease-out-cubic"
      data-aos-duration="2000">
-     <img src={crudOperation} alt='crud-operation' />
+     <img src={Madrasty} alt='crud-operation' />
      <h4> Madrasty </h4>
     <p>
     Madrasty is a comprehensive software solution designed to streamline and automate various administrative and operational processes within a school. The system aims to improve efficiency and provide better tracking and reporting capabilities for the school’s management, teachers, students, and parents

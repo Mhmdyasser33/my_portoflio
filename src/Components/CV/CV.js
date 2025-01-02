@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import cv_img from '../../images/Screenshot (160).png';
+import cv_img from '../../images/mhmd_cv.jpg';
 import './CV.css';
 
 const CV = () => {

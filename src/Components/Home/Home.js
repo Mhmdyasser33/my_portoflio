@@ -83,13 +83,13 @@ const Home = () => {
       {/* Chatbot Toggle Button */}
       <div className='chat-icon' onClick={toggleChat} style={{
     position: 'fixed',
-    bottom: '30px', 
-    right: '30px', 
+    bottom: '3px', 
+    right: '10px', 
     background: '#007bff', 
     borderRadius: '50%',
     boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)', 
     width: '70px', 
-    height: '50px', 
+    height: '70px', 
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
@@ -97,7 +97,7 @@ const Home = () => {
     transition: 'background 0.3s, transform 0.2s',
 }} 
 >
-    <img src={chatIcon} alt='Chat Icon' style={{ width: '35px', height: '35px' }} /> {/* Adjusted icon size */}
+    <img src={chatIcon} alt='Chat Icon' style={{ width: '30px', height: '30px' }} /> {/* Adjusted icon size */}
 </div>
         <img src={chatIcon} alt='Chat Icon' style={{ width: '10px', height: '10px' }} />
 {isChatOpen && (

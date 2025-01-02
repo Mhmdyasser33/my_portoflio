@@ -67,7 +67,18 @@
     box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137);
     transform: scale(1.1);
 }
-
+.chatbot-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Adjust as needed */
+  }
+  
+  .chatbot-container iframe {
+    max-width: 100%; 
+    height: auto; 
+  }
 /* Media Queries */
 @media screen and (max-width: 768px) {
     .left-side p,
@@ -107,4 +118,22 @@
     .contact .contact-container a img {
         height: 20px;
     }
+
 }
+@media screen and (max-width: 768px) {
+    .chatbot-container {
+      width: 90%; 
+      height: 70%; 
+      bottom: 10%; 
+      right: 5%; 
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .chatbot-container {
+      width: 95%; 
+      height: 80%; 
+      bottom: 5%; 
+      right: 2%; 
+    }
+  }

@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import HomeIcon from '../../images/home-main.svg';
 import { Link } from 'react-router-dom';
 import LinkedInImg from '../../images/icons8-linkedin.svg';
 import GithubImg from '../../images/icons8-github.svg';
 import GmailImg from '../../images/icons8-gmail.svg';
+import chatIcon from '../../images/chat.png'
 import './Home.css';
 
 const Home = () => {
+  const [isChatOpen, setIsChatOpen] = useState(false);
+  
+  const toggleChat = () => {
+    setIsChatOpen(!isChatOpen); // Toggle chat visibility
+  }; 
+
   return (
     <>
       {/* Left-side section */}
@@ -72,6 +79,57 @@ const Home = () => {
           </Link>
         </div>
       </section>
+
+      {/* Chatbot Toggle Button */}
+      <div className='chat-icon' onClick={toggleChat} style={{
+    position: 'fixed',
+    bottom: '30px', 
+    right: '30px', 
+    background: '#007bff', 
+    borderRadius: '50%',
+    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)', 
+    width: '70px', 
+    height: '50px', 
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    cursor: 'pointer',
+    transition: 'background 0.3s, transform 0.2s',
+}} 
+>
+    <img src={chatIcon} alt='Chat Icon' style={{ width: '35px', height: '35px' }} /> {/* Adjusted icon size */}
+</div>
+        <img src={chatIcon} alt='Chat Icon' style={{ width: '10px', height: '10px' }} />
+{isChatOpen && (
+  <div className='chatbot-container' style={{
+    position: 'fixed',
+    bottom: '10%', 
+    right: '5%', 
+    width: '90%', 
+    maxWidth: '400px', 
+    height: '70%', 
+    maxHeight: '500px', 
+    background: '#fff',
+    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)',
+    borderRadius: '10px',
+    overflow: 'hidden',
+    zIndex: '1000',
+  }}>
+    <iframe
+      src="https://www.chatbase.co/chatbot-iframe/iQ4Az8-zlAQjVGOqw9Rre"
+      width="100%"
+      height="100%"
+      style={{
+        border: "none",
+        minHeight: "500px", 
+        padding: "10px", 
+        borderRadius: "10px", 
+        boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)", 
+      }}
+      title="Chatbot"
+    />
+  </div>
+)}
     </>
   );
 }

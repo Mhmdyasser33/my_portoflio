@@ -80,56 +80,9 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Chatbot Toggle Button */}
-      <div className='chat-icon' onClick={toggleChat} style={{
-    position: 'fixed',
-    bottom: '3px', 
-    right: '10px', 
-    background: '#007bff', 
-    borderRadius: '50%',
-    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)', 
-    width: '55px', 
-    height: '55px', 
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    cursor: 'pointer',
-    transition: 'background 0.3s, transform 0.2s',
-}} 
->
-    <img src={chatIcon} alt='Chat Icon' style={{ width: '30px', height: '30px' }} /> {/* Adjusted icon size */}
-</div>
+ 
        
-{isChatOpen && (
-  <div className='chatbot-container' style={{
-    position: 'fixed',
-    bottom: '10%', 
-    right: '5%', 
-    width: '80%', 
-    maxWidth: '400px', 
-    height: '80%', 
-    maxHeight: '500px', 
-    background: '#fff',
-    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)',
-    borderRadius: '10px',
-    overflow: 'hidden',
-    zIndex: '1000',
-  }}>
-    <iframe
-      src="https://www.chatbase.co/chatbot-iframe/FXIThgM3FlWFTfFUEB70_"
-      width="100%"
-      height="100%"
-      style={{
-        border: "none",
-        minHeight: "500px", 
-        padding: "10px", 
-        borderRadius: "10px", 
-        boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)", 
-      }}
-      title="Chatbot"
-    />
-  </div>
-)}
+
     </>
   );
 }

@@ -116,7 +116,7 @@ const Home = () => {
     zIndex: '1000',
   }}>
     <iframe
-      src="https://www.chatbase.co/chatbot-iframe/iQ4Az8-zlAQjVGOqw9Rre"
+      src="https://www.chatbase.co/chatbot-iframe/FXIThgM3FlWFTfFUEB70_"
       width="100%"
       height="100%"
       style={{

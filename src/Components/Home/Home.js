@@ -88,8 +88,8 @@ const Home = () => {
     background: '#007bff', 
     borderRadius: '50%',
     boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)', 
-    width: '70px', 
-    height: '70px', 
+    width: '55px', 
+    height: '55px', 
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
@@ -99,15 +99,15 @@ const Home = () => {
 >
     <img src={chatIcon} alt='Chat Icon' style={{ width: '30px', height: '30px' }} /> {/* Adjusted icon size */}
 </div>
-        <img src={chatIcon} alt='Chat Icon' style={{ width: '10px', height: '10px' }} />
+       
 {isChatOpen && (
   <div className='chatbot-container' style={{
     position: 'fixed',
     bottom: '10%', 
     right: '5%', 
-    width: '90%', 
+    width: '80%', 
     maxWidth: '400px', 
-    height: '70%', 
+    height: '80%', 
     maxHeight: '500px', 
     background: '#fff',
     boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)',

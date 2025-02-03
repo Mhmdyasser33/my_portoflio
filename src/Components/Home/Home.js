@@ -78,6 +78,7 @@ const Home = () => {
             <img src={GmailImg} alt='gmail' style={{ filter: 'brightness(0) invert(1)' }} />
           </Link>
         </div>
+        
       </section>
 
  
